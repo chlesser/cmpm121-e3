@@ -1,3 +1,7 @@
 A, Pox: I will create a group of masses somewhat similar to chickenpox. These should be collections of red dots all around the face. This will use 100+ visible shapes
-B, Clouds: I will create two clouds of stink that will sit behind the face to the left and right. This will use assets.
-C, Frown: I will create a curved frown and a head shaded from red to normal to indicate sickness. This will use a bezeir curve and gradient.
+
+- explored as anticipated. I used a random variable instead!
+  B, Clouds: I will create two clouds of stink that will sit behind the face to the left and right. This will use assets.
+- explored: I switched one of the stink clouds to a fly, in order to create difference
+  C, Frown: I will create a curved frown and a head shaded from red to normal to indicate sickness. This will use a bezeir curve and gradient.
+- explored: I added a tongue because it was thematic. I also made the shade green to tan rather than red! I needed the dots to stand out.
