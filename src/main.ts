@@ -21,6 +21,23 @@ function buildFace() {
   head.setAttribute("stroke-width", "4");
   face.append(head);
 
+  const MAX = 45;
+  const MIN = 30;
+  for (let i = 0; i < 100; i++) {
+    const radius = (Math.random() * MAX) + MIN;
+    const theta = Math.random() * Math.PI * 2;
+    const dot = document.createElementNS(
+      "http://www.w3.org/2000/svg",
+      "circle",
+    );
+    dot.setAttribute("cx", String(100 + radius * Math.cos(theta)));
+    dot.setAttribute("cy", String(100 + radius * Math.sin(theta)));
+    dot.setAttribute("r", "3");
+    dot.setAttribute("fill", "#c02c19");
+    dot.setAttribute("aria-label", "THE POX");
+    face.append(dot);
+  }
+
   const leftEye = document.createElementNS(
     "http://www.w3.org/2000/svg",
     "ellipse",
