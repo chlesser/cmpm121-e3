@@ -1,3 +1,7 @@
+// @deno-types="./asset-url.d.ts"
+import flyUrl from "./assets/fly.png";
+import stinkUrl from "./assets/stinky.png";
+
 const portrait = document.querySelector<HTMLDivElement>("#portrait")!;
 const spin = document.querySelector<HTMLButtonElement>("#spin")!;
 
@@ -5,7 +9,29 @@ const spin = document.querySelector<HTMLButtonElement>("#spin")!;
 const face = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 face.setAttribute("viewBox", "0 0 200 200");
 face.setAttribute("role", "img");
-face.setAttribute("aria-label", "A neutral face");
+face.setAttribute("aria-label", "A sickly face");
+
+const flyImage = document.createElementNS(
+  "http://www.w3.org/2000/svg",
+  "image",
+);
+flyImage.setAttribute("href", flyUrl);
+flyImage.setAttribute("x", "0");
+flyImage.setAttribute("y", "0");
+flyImage.setAttribute("width", "50");
+flyImage.setAttribute("height", "50");
+face.append(flyImage);
+
+const stinkImage = document.createElementNS(
+  "http://www.w3.org/2000/svg",
+  "image",
+);
+stinkImage.setAttribute("href", stinkUrl);
+stinkImage.setAttribute("x", "100");
+stinkImage.setAttribute("y", "-30");
+stinkImage.setAttribute("width", "100");
+stinkImage.setAttribute("height", "100");
+face.append(stinkImage);
 
 const head = document.createElementNS("http://www.w3.org/2000/svg", "ellipse");
 head.setAttribute("cx", "100");
